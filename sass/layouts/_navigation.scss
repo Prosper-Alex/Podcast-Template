@@ -1,0 +1,142 @@
+// @use "../abstracts/mixins" as *;
+// @use "../abstracts/variables" as *;
+// .navigation {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 2.4rem;
+
+//   @include bg-desktop {
+//     animation: moveinBottom 1s ease-out;
+//   }
+
+//   .nav_logo {
+//     font-size: 2.2rem;
+//     font-weight: 700;
+//     color: $accent-color;
+//   }
+
+//   .nav_lists {
+//     font-family: $secondary-font;
+//     display: flex;
+//     gap: 2.4rem;
+//     align-items: center;
+
+//     @include tab-port {
+//       position: fixed;
+//       top: 0;
+//       right: 0;
+//       z-index: 100;
+//       background-color: rgba(255, 255, 255, 0.7);
+//       backdrop-filter: blur(3px);
+//       height: 100vh;
+//       flex-direction: column;
+//       width: min(100vw, 30rem);
+//       justify-content: center;
+//       transform: translateX(100%);
+//       transition: transform 0.3s ease;
+//       gap: 3rem;
+//       -webkit-transform: translateX(100%);
+//       -moz-transform: translateX(100%);
+//       -ms-transform: translateX(100%);
+//       -o-transform: translateX(100%);
+//     }
+
+//     &_item {
+//       font-size: 1.8rem;
+//       font-weight: 500;
+//       color: $accent-text-color;
+//       transition: all 500ms ease;
+
+//       &:hover,
+//       &:active {
+//         background-color: $light-shade;
+//         border-radius: 6px;
+//       }
+//     }
+
+//     .nav_item-wrapper {
+//       display: flex;
+//       align-items: center;
+//       gap: 0.8rem;
+//     }
+
+//     .nav_item-wrapper.bg {
+//       border-radius: $border-radius-rm;
+//       padding: 1rem 2rem;
+//       background-color: $light-shade;
+//     }
+
+//     .nav_item {
+//       font-family: $primary-font;
+//       font-size: 1.6rem;
+//     }
+
+//     .pb {
+//       display: none;
+
+//       @include tab-port {
+//         display: flex;
+//       }
+//     }
+//   }
+
+//   @include tab-port {
+//     #checkbox:checked ~ .nav_lists {
+//       transform: translateX(0);
+//     }
+//   }
+
+//   @include phone {
+//     #checkbox:checked ~ .nav_toggle span.open {
+//       display: none;
+//     }
+//     #checkbox:checked ~ .nav_toggle span.close {
+//       display: flex;
+//     }
+//   }
+
+//   .nav_actions {
+//     display: flex;
+//     gap: 2.4rem;
+//     align-items: center;
+//   }
+
+//   .dk {
+//     display: flex;
+
+//     @include tab-port {
+//       display: none;
+//     }
+//   }
+
+//   .nav_toggle {
+//     display: none;
+//     transition: all 0.2s;
+
+//     @include tab-port {
+//       position: fixed;
+//       right: 0;
+//       display: flex;
+//       font-size: 2.4rem;
+//       cursor: pointer;
+//       z-index: 150;
+//       margin-right: 2rem;
+//       padding: 1rem 2rem;
+//       background-color: $primary-light;
+//       border-radius: 15px;
+//     }
+
+//     span.open {
+//       display: flex;
+//     }
+
+//     span.close {
+//       display: none;
+//     }
+//   }
+
+//   #checkbox {
+//     display: none;
+//   }
+// }

@@ -1,0 +1,40 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+.center-children--bg {
+  padding-left: 8vw !important;
+  padding-right: 8vw !important;
+
+  @include tab-land() {
+    padding-left: 6vw !important;
+    padding-right: 6vw !important;
+  }
+}
+
+.center-children--sm {
+  padding-left: 4vw !important;
+  padding-right: 4vw !important;
+}
+
+.content-btn {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  @include tab-port {
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  @include medium-phone {
+    gap: 1rem;
+  }
+
+  @include small-phone {
+    gap: 0.6rem;
+  }
+}
+
+.white {
+  color: white;
+}
