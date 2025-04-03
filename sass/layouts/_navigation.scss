@@ -1,142 +1,157 @@
-// @use "../abstracts/mixins" as *;
-// @use "../abstracts/variables" as *;
-// .navigation {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   padding: 2.4rem;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem;
+  font-family: $primary-font;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
 
-//   @include bg-desktop {
-//     animation: moveinBottom 1s ease-out;
-//   }
+  @include bg-desktop {
+    animation: moveinBottom 1s ease-out;
+  }
 
-//   .nav_logo {
-//     font-size: 2.2rem;
-//     font-weight: 700;
-//     color: $accent-color;
-//   }
+  .nav_logo {
+    font-family: $primary-font;
+    font-size: 2.4rem;
+    font-weight: 700;
 
-//   .nav_lists {
-//     font-family: $secondary-font;
-//     display: flex;
-//     gap: 2.4rem;
-//     align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    cursor: pointer;
 
-//     @include tab-port {
-//       position: fixed;
-//       top: 0;
-//       right: 0;
-//       z-index: 100;
-//       background-color: rgba(255, 255, 255, 0.7);
-//       backdrop-filter: blur(3px);
-//       height: 100vh;
-//       flex-direction: column;
-//       width: min(100vw, 30rem);
-//       justify-content: center;
-//       transform: translateX(100%);
-//       transition: transform 0.3s ease;
-//       gap: 3rem;
-//       -webkit-transform: translateX(100%);
-//       -moz-transform: translateX(100%);
-//       -ms-transform: translateX(100%);
-//       -o-transform: translateX(100%);
-//     }
+    @include tab-port {
+      font-size: 3.2rem;
+      margin-left: 2rem;
+    }
+  }
 
-//     &_item {
-//       font-size: 1.8rem;
-//       font-weight: 500;
-//       color: $accent-text-color;
-//       transition: all 500ms ease;
+  .nav_lists {
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
 
-//       &:hover,
-//       &:active {
-//         background-color: $light-shade;
-//         border-radius: 6px;
-//       }
-//     }
+    @include tab-port {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 100;
+      background-color: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(3px);
+      height: 100vh;
+      flex-direction: column;
+      width: min(100vw, 30rem);
+      justify-content: center;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      gap: 3rem;
+      -webkit-transform: translateX(100%);
+      -moz-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      -o-transform: translateX(100%);
+    }
 
-//     .nav_item-wrapper {
-//       display: flex;
-//       align-items: center;
-//       gap: 0.8rem;
-//     }
+    &_item {
+      font-size: 1.8rem;
+      font-weight: 500;
 
-//     .nav_item-wrapper.bg {
-//       border-radius: $border-radius-rm;
-//       padding: 1rem 2rem;
-//       background-color: $light-shade;
-//     }
+      transition: all 500ms ease;
 
-//     .nav_item {
-//       font-family: $primary-font;
-//       font-size: 1.6rem;
-//     }
+      &:hover,
+      &:active {
+        border-radius: 6px;
+      }
+    }
 
-//     .pb {
-//       display: none;
+    .nav_item-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
 
-//       @include tab-port {
-//         display: flex;
-//       }
-//     }
-//   }
+    .nav_item-wrapper.bg {
+      border-radius: $border-radius-rm;
+      padding: 1rem 2rem;
+    }
 
-//   @include tab-port {
-//     #checkbox:checked ~ .nav_lists {
-//       transform: translateX(0);
-//     }
-//   }
+    .nav_item {
+      font-family: $primary-font;
+      font-size: 1.6rem;
+    }
 
-//   @include phone {
-//     #checkbox:checked ~ .nav_toggle span.open {
-//       display: none;
-//     }
-//     #checkbox:checked ~ .nav_toggle span.close {
-//       display: flex;
-//     }
-//   }
+    .pb {
+      display: none;
 
-//   .nav_actions {
-//     display: flex;
-//     gap: 2.4rem;
-//     align-items: center;
-//   }
+      @include tab-port {
+        display: flex;
+      }
+    }
+  }
 
-//   .dk {
-//     display: flex;
+  @include tab-port {
+    #checkbox:checked ~ .nav_lists {
+      transform: translateX(0);
+    }
+  }
 
-//     @include tab-port {
-//       display: none;
-//     }
-//   }
+  @include phone {
+    #checkbox:checked ~ .nav_toggle span.open {
+      display: none;
+    }
+    #checkbox:checked ~ .nav_toggle span.close {
+      display: flex;
+    }
+  }
 
-//   .nav_toggle {
-//     display: none;
-//     transition: all 0.2s;
+  .nav_actions {
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+  }
 
-//     @include tab-port {
-//       position: fixed;
-//       right: 0;
-//       display: flex;
-//       font-size: 2.4rem;
-//       cursor: pointer;
-//       z-index: 150;
-//       margin-right: 2rem;
-//       padding: 1rem 2rem;
-//       background-color: $primary-light;
-//       border-radius: 15px;
-//     }
+  .dk {
+    display: flex;
 
-//     span.open {
-//       display: flex;
-//     }
+    @include tab-port {
+      display: none;
+    }
+  }
 
-//     span.close {
-//       display: none;
-//     }
-//   }
+  .nav_toggle {
+    display: none;
+    transition: all 0.2s;
 
-//   #checkbox {
-//     display: none;
-//   }
-// }
+    @include tab-port {
+      position: fixed;
+      right: 0;
+      display: flex;
+      font-size: 2.4rem;
+      cursor: pointer;
+      z-index: 150;
+      margin-right: 2rem;
+      padding: 1rem 2rem;
+      background-color: $primary-light;
+      border-radius: 15px;
+    }
+
+    span.open {
+      display: flex;
+    }
+
+    span.close {
+      display: none;
+    }
+  }
+
+  // The #checkbox is a hidden input used to toggle the navigation menu.
+  // When checked, it triggers styles for the .nav_lists and .nav_toggle elements
+  // to display or hide the navigation menu on smaller screens.
+  #checkbox {
+    display: none;
+  }
+}

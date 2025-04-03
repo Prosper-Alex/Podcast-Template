@@ -27,14 +27,12 @@
   border-radius: 6px;
   @include sm-fsz;
   color: $default-background-color;
-  background-color: $accent-color;
 }
 
 .btn--transparent {
   @extend .btn-2;
   background-color: transparent;
   border: 2px solid $border-color;
-  color: $accent-text-color;
 }
 
 .btn-1 {
@@ -52,7 +50,6 @@
 
 .navigation__nav--item:hover,
 .navigation__nav--item:active {
-  background-color: $light-shade;
   border-radius: 6px;
 }
 

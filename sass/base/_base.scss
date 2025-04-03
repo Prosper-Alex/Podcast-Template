@@ -1,5 +1,4 @@
 @use "../abstracts/variables" as *;
-
 @use "../abstracts/mixins" as *;
 
 * {
@@ -35,5 +34,7 @@ button {
 
 p,
 span {
-  font-family: $secondary-font;
+  font-family: $primary-font;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
