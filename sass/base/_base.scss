@@ -11,6 +11,11 @@ body {
   box-sizing: border-box;
   background-color: $default-background-color;
   color: $default-color;
+  font-family: $primary-font;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  letter-spacing: -0.03em;
 }
 
 h1,
