@@ -127,7 +127,7 @@ html {
 
 .paragraph {
   font-family: $primary-font;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.6;
   letter-spacing: -0.03em;
   color: $default-color;
@@ -139,24 +139,6 @@ html {
 
 .paragraph.bg {
   font-size: 2rem;
-}
-
-.paragraph.md {
-  font-size: 1.8rem;
-
-  @include tab-land {
-    font-size: 1.6rem;
-    margin-top: 2rem;
-  }
-
-  @include tab-port {
-    font-size: 1.6rem;
-    margin-top: 1rem;
-  }
-
-  @include phone {
-    font-size: 1.4rem;
-  }
 }
 
 .paragraph.sm {
