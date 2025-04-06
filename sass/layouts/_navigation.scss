@@ -106,6 +106,7 @@
     #checkbox:checked ~ .nav_toggle span.open {
       display: none;
     }
+
     #checkbox:checked ~ .nav_toggle span.close {
       display: flex;
     }
@@ -180,9 +181,6 @@
     }
   }
 
-  // The #checkbox is a hidden input used to toggle the navigation menu.
-  // When checked, it triggers styles for the .nav_lists and .nav_toggle elements
-  // to display or hide the navigation menu on smaller screens.
   #checkbox {
     display: none;
   }
