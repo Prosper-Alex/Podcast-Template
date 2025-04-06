@@ -19,17 +19,30 @@
       .paragraph {
         width: 60%;
         margin: 0 auto;
+
+        @include small-phone {
+          width: 90%;
+        }
       }
 
       .black-bg {
         font-weight: 700;
         font-size: 1.4rem;
-        margin-top: 4rem;
+        margin: 4rem 0;
+        border: none;
+        letter-spacing: 0.5px;
         padding: 1.4rem 2.4rem;
         display: inline-block;
-        border-radius: $border-radius-rm;
+
+        box-shadow: $btn-shadow;
         color: $default-background-color;
         background-color: $default-color;
+        border-radius: $border-radius-rm;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .black-bg:hover {
+        transform: translateY(-2px);
+        box-shadow: $btn-shadow--hover;
       }
     }
   }
