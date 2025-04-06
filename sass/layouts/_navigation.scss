@@ -6,21 +6,26 @@
   justify-content: space-between;
   align-items: center;
   padding: 2.4rem;
-  font-size: 2.4rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
+  text-transform: capitalize;
+  letter-spacing: 0%;
   cursor: pointer;
 
   @include bg-desktop {
     animation: moveinBottom 1s ease-out;
   }
 
+  .main-nav--wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+  }
+
   .nav_logo {
     font-size: 2.4rem;
     font-weight: 700;
 
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 0.5rem;
     cursor: pointer;
 
@@ -34,6 +39,7 @@
     display: flex;
     gap: 2.4rem;
     align-items: center;
+    font-size: 1.6rem;
 
     @include tab-port {
       position: fixed;
@@ -70,7 +76,6 @@
     .nav_item-wrapper {
       display: flex;
       align-items: center;
-      gap: 0.8rem;
     }
 
     .nav_item-wrapper.bg {
@@ -110,6 +115,36 @@
     display: flex;
     gap: 2.4rem;
     align-items: center;
+    font-size: 1.4rem;
+  }
+  .cta {
+    padding: 1rem 1.4rem;
+    transition: transform 0.2s ease;
+  }
+
+  .border {
+    border: 1px solid $default-color;
+    border-radius: $border-radius-rm;
+  }
+
+  .border:hover {
+    border: none;
+    border-radius: $border-radius-rm;
+    background-color: $default-color;
+    color: $default-background-color;
+  }
+
+  .black-bg {
+    background-color: $default-color;
+    color: $default-background-color;
+    border-radius: $border-radius-rm;
+  }
+
+  .black-bg:hover {
+    color: $default-color;
+    border: 1px solid $default-color;
+    border-radius: $border-radius-rm;
+    background-color: $default-background-color;
   }
 
   .dk {
