@@ -12,24 +12,9 @@
       flex: 1;
       display: contents;
       width: 100%;
-    }
 
-    .swirl {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      img {
-        object-fit: contain;
-      }
-      @include small-phone {
-        max-width: 15rem;
-        max-height: 15rem;
-      }
       @include tab-port {
-        max-width: 20rem;
-        max-height: 20rem;
+        display: none;
       }
     }
 
