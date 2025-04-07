@@ -143,8 +143,13 @@
   }
 
   .black-bg:hover {
-    transform: translateY(-1.5px);
-    box-shadow: $btn-shadow--hover;
+    transform: translateY(-1px);
+    box-shadow: $btn-shadow;
+  }
+
+  .black-bg:active {
+    transform: translateY(1px);
+    box-shadow: $btn-shadow--clicked;
   }
 
   .dk {
