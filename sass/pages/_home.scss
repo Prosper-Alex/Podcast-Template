@@ -114,16 +114,12 @@
 
   &_image {
     .podcast {
-      display: flex;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
       gap: 3rem;
       width: 100%;
 
       .podcast-card {
-        flex: 1;
-        height: 30rem;
-        width: 100%;
-
         .podcast-image {
           position: relative;
           height: 30rem;
