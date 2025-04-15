@@ -115,17 +115,19 @@
   }
 
   .header_image {
+    overflow-x: visible;
     .podcast {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 3rem;
       width: 100%;
+      overflow-x: scroll;
 
       .podcast-card {
         position: relative;
+
         .podcast-image {
           height: 30rem;
-          width: 100%;
 
           img {
             height: 100%;
@@ -134,9 +136,38 @@
           }
         }
 
-        // .podcast-image.podcard-1 {
-        //   position: relative;
-        // }
+        .podcard-left {
+          height: 30rem;
+          width: 20rem;
+
+          img {
+            height: 100%;
+            width: 100%;
+            border-radius: $border-radius-rm;
+          }
+        }
+
+        .podcard-right {
+          height: 30rem;
+          width: 20rem;
+
+          img {
+            height: 100%;
+            width: 100%;
+            border-radius: $border-radius-rm;
+          }
+        }
+
+        .podcard {
+          height: 30rem;
+          width: 35rem;
+
+          img {
+            height: 100%;
+            width: 100%;
+            border-radius: $border-radius-rm;
+          }
+        }
         // .podcast-image.podcard-2 {
         //   position: relative;
         // }
