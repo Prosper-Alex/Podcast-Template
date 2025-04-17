@@ -145,6 +145,8 @@ $breakpoints: (
   // 752px
   "tab-port": 56.25em,
   // 900px
+  "tab-land--sm": 65em,
+  // 1040px
   "tab-land": 75em,
   // 1200px
   "sm-desktop": 93.8em,
@@ -186,6 +188,12 @@ $breakpoints: (
 
 @mixin tab-land {
   @media (max-width: map-get($breakpoints, "tab-land")) {
+    @content;
+  }
+}
+
+@mixin tab-land--sm {
+  @media (max-width: map-get($breakpoints, "tab-land--sm")) {
     @content;
   }
 }

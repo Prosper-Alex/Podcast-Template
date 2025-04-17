@@ -19,6 +19,20 @@
     display: flex;
     align-items: center;
     gap: 6rem;
+
+    .logo {
+      @include phone {
+        height: 5rem;
+        width: 5rem;
+      }
+
+      img {
+        @include phone {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
   }
 
   .nav_logo {

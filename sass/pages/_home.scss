@@ -80,6 +80,9 @@
         @include small-phone {
           width: 90%;
         }
+        @include medium-phone {
+          width: 70%;
+        }
 
         @include bg-desktop {
           width: 50%;
@@ -115,52 +118,37 @@
   }
 
   .header_image {
-    overflow-x: visible;
     .podcast {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 3rem;
+
+      gap: 2rem;
       width: 100%;
-      overflow-x: scroll;
+      overflow-y: scroll;
+
+      @include tab-land--sm {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 4rem 3rem;
+      }
 
       .podcast-card {
         position: relative;
 
         .podcast-image {
           height: 30rem;
+          width: 100%;
 
           img {
             height: 100%;
             width: 100%;
-            border-radius: $border-radius-rm;
-          }
-        }
-
-        .podcard-left {
-          height: 30rem;
-          width: 20rem;
-
-          img {
-            height: 100%;
-            width: 100%;
-            border-radius: $border-radius-rm;
-          }
-        }
-
-        .podcard-right {
-          height: 30rem;
-          width: 20rem;
-
-          img {
-            height: 100%;
-            width: 100%;
+            object-fit: cover;
             border-radius: $border-radius-rm;
           }
         }
 
         .podcard {
           height: 30rem;
-          width: 35rem;
+          width: 100%;
 
           img {
             height: 100%;
@@ -203,6 +191,33 @@
           }
         }
       }
+    }
+  }
+
+  .header_logos {
+    padding: 4rem 0;
+
+    & > * {
+      margin: 4rem 0;
+    }
+
+    .header_logos--wrapper {
+      border-top: 1px solid $davys-grey;
+      border-bottom: 1px solid $davys-grey;
+    }
+
+    .header_logos--content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 0;
+      gap: 2rem;
+    }
+
+    .logo-text {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
     }
   }
 }
