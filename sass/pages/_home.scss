@@ -4,14 +4,15 @@
   margin: 5rem 0 10rem 0;
 
   .header_wrapper {
+    position: relative;
     .scribble-icon {
       position: absolute;
-      top: 0;
-      left: 0;
+      left: 50%;
+      bottom: -5rem;
       z-index: 1;
       margin-top: -4rem;
-      height: 4rem;
-      width: 4rem;
+      height: 10rem;
+      width: 10rem;
       transform: translateX(-50%);
 
       img {
