@@ -314,3 +314,100 @@
     }
   }
 }
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  border-radius: $border-radius-rm;
+  background-color: $champagne-color;
+  margin-top: 10rem;
+  padding: 6rem 0;
+  position: relative;
+
+  .testimonial-text {
+    .heading-tertiary {
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+
+      @include phone {
+        width: 90%;
+      }
+    }
+  }
+
+  .testimonial-info {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    @include small-phone {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .profile-info {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      .profile-img {
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .job-info {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+
+  .testimonial-swirl {
+    position: absolute;
+    left: -5rem;
+    bottom: 7rem;
+
+    @include phone {
+      left: -3rem;
+      bottom: 5rem;
+      height: 10rem;
+      width: 10rem;
+    }
+
+    img {
+      @include phone {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .testimonial-blackstar {
+    position: absolute;
+    top: -4rem;
+    right: -5rem;
+
+    @include phone {
+      top: -3rem;
+      right: -3rem;
+      height: 10rem;
+      width: 10rem;
+    }
+
+    img {
+      @include phone {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
