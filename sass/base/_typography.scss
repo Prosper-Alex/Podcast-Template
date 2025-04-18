@@ -67,9 +67,13 @@ html {
 
 .heading-secondary {
   font-family: $primary-font;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 70.4px;
   letter-spacing: -0.03em;
+  font-size: 6.4rem;
+}
+
+.heading-secondary.bg {
   font-size: 6.4rem;
 
   @include tab-land {
@@ -78,6 +82,20 @@ html {
   }
   @include medium-phone {
     font-size: 3.5rem;
+    line-height: 1.4;
+  }
+}
+
+.heading-secondary.md {
+  font-size: 6rem;
+  letter-spacing: -2%;
+
+  @include tab-land {
+    font-size: 4.5rem;
+    line-height: 1.4;
+  }
+  @include medium-phone {
+    font-size: 2.5rem;
     line-height: 1.4;
   }
 }
@@ -133,7 +151,11 @@ html {
   }
 
   @include phone {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+
+  @include medium-phone {
+    font-size: 1.4rem;
   }
 }
 

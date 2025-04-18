@@ -143,7 +143,6 @@
 
       gap: 2rem;
       width: 100%;
-      overflow-y: scroll;
 
       @include tab-land--sm {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -231,12 +230,87 @@
       align-items: center;
       padding: 2rem 0;
       gap: 2rem;
+      width: 100%;
+
+      @include bg-desktop {
+        justify-content: space-around;
+      }
+
+      @include phone {
+        gap: 1rem;
+      }
+
+      .logo {
+        @include tab-port {
+          width: 12rem;
+        }
+
+        @include phone {
+          width: 8rem;
+        }
+
+        img {
+          @include tab-port {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
     }
 
     .logo-text {
       display: flex;
       align-items: center;
       justify-content: flex-start;
+    }
+  }
+}
+
+// SECTION INSPIRED
+
+.inspired {
+  margin: 4rem 0;
+
+  .inspired_wrapper {
+    .content {
+      .heading-secondary {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+
+        @include phone {
+          width: 90%;
+        }
+      }
+
+      .thought-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 6rem 0;
+        gap: 5rem;
+
+        @include tab-port {
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
+        }
+        .thought {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .paragraph {
+            width: 70%;
+            margin: 2rem auto;
+            text-align: center;
+
+            @include phone {
+              width: 90%;
+            }
+          }
+        }
+      }
     }
   }
 }
