@@ -345,6 +345,9 @@
   position: relative;
 
   .testimonial-text {
+    .heading-primary {
+      color: $accent-color;
+    }
     .heading-tertiary {
       width: 70%;
       margin: 0 auto;
