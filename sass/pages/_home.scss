@@ -382,12 +382,24 @@
           border-radius: 50%;
         }
       }
+
+      .profile-name {
+        .paragraph {
+          font-weight: 500;
+        }
+      }
     }
 
     .job-info {
       display: flex;
       align-items: center;
       gap: 0.5rem;
+
+      .job-title {
+        .paragraph {
+          font-weight: 700;
+        }
+      }
     }
   }
 
@@ -427,6 +439,165 @@
       @include phone {
         height: 100%;
         width: 100%;
+      }
+    }
+  }
+}
+
+// SECTION LISTENERS
+
+.listeners {
+  margin: 15rem 0 7rem 0;
+  background-color: $alice-blue;
+
+  .listeners_wrapper {
+    position: relative;
+
+    .scribble-icon {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      z-index: 1;
+      margin-top: -4rem;
+      margin-bottom: 5rem;
+      height: 10rem;
+      width: 10rem;
+      transform: translateX(-50%);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .listeners_content {
+      padding: 8rem 0;
+
+      position: relative;
+
+      .sparkle-icon {
+        position: absolute;
+
+        top: 3rem;
+        left: 15rem;
+
+        @include tab-port {
+          left: 0;
+        }
+
+        @include phone {
+          height: 7rem;
+          width: 7rem;
+        }
+
+        img {
+          @include phone {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+
+      .textbox {
+        margin-top: 4rem;
+        .heading-secondary {
+          text-align: center;
+          width: 70%;
+          margin: 0 auto;
+
+          @include phone {
+            width: 90%;
+          }
+        }
+
+        .paragraph {
+          width: 90%;
+          margin: 0 auto;
+          text-align: center;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  &_testimonial {
+    padding: 4rem 0;
+
+    .testimonial--wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+
+      @include tab-port {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+      }
+
+      .testimony {
+        padding: 3rem 2rem;
+        border-radius: $border-radius-rm;
+        background-color: $default-background-color;
+
+        .testimony-textbox {
+          .heading-primary {
+            color: $accent-color;
+          }
+          .paragraph {
+            width: 90%;
+          }
+
+          @include small-phone {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1.5rem;
+          }
+        }
+
+        .testimonial--info {
+          display: flex;
+          gap: 1.5rem;
+          margin-top: 2rem;
+
+          @include small-phone {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+          }
+
+          .profile-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            .profile-img {
+              img {
+                border-radius: 50%;
+              }
+            }
+
+            .profile-name {
+              .paragraph {
+                font-weight: 500;
+              }
+            }
+          }
+
+          .job-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            .job-title {
+              .paragraph {
+                font-weight: 700;
+              }
+            }
+          }
+        }
       }
     }
   }
