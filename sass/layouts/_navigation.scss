@@ -94,7 +94,8 @@
       .nav_dropdown {
         position: relative;
 
-        .link:active + .nav_dropdown--menu {
+        .link:active + .nav_dropdown--menu,
+        .active {
           opacity: 1;
           transform: translateY(0);
           pointer-events: auto;
