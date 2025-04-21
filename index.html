@@ -11,6 +11,8 @@
     <title>Podcast-Template</title>
 
     <link rel="stylesheet" href="/css/main.css" />
+
+    <script src="/js/script.js" defer></script>
   </head>
   <body>
     <main class="main-header">
@@ -29,18 +31,27 @@
                 <li class="cta nav_item">Episodes</li>
               </span>
             </a>
-            <a class="main-nav-link" href="about.html">
-              <span class="nav_item-wrapper">
+            <span class="nav_item-wrapper">
+              <a class="main-nav-link" href="about.html">
                 <li class="cta nav_item">About</li>
-                <img src="/asset/icon/arrow-down.svg" alt="drop-down" />
-              </span>
-            </a>
-            <a class="main-nav-link" href="more.html">
-              <span class="nav_item-wrapper">
+              </a>
+
+              <div class="nav_dropdown" data-dropdown>
+                <img
+                  src="/asset/icon/arrow-down.svg"
+                  class="link"
+                  data-dropdown-button
+                  alt="drop-down" />
+
+                <div class="nav_dropdown--menu">Dropdown--content</div>
+              </div>
+            </span>
+            <span class="nav_item-wrapper">
+              <a class="main-nav-link" href="more.html">
                 <li class="cta nav_item">More</li>
-                <img src="/asset/icon/arrow-down.svg" alt="drop-down" />
-              </span>
-            </a>
+              </a>
+              <img src="/asset/icon/arrow-down.svg" alt="drop-down" />
+            </span>
 
             <div class="nav_actions pb">
               <a href="#" class="cta border"> Recent Episodes</a

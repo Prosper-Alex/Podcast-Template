@@ -90,6 +90,29 @@
     .nav_item-wrapper {
       display: flex;
       align-items: center;
+
+      .nav_dropdown {
+        position: relative;
+
+        .link:active + .nav_dropdown--menu {
+          opacity: 1;
+          transform: translateY(0);
+          pointer-events: auto;
+        }
+
+        .nav_dropdown--menu {
+          position: absolute;
+          left: 0;
+          top: calc(100% + 0.25rem);
+          padding: 2rem 3rem;
+          border-radius: $border-radius-rm;
+          box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+          opacity: 0;
+          pointer-events: none;
+          transform: translateY(-10px);
+          transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+        }
+      }
     }
 
     .nav_item-wrapper.bg {
