@@ -183,7 +183,7 @@
   }
 
   @include tab-port {
-    #checkbox:checked ~ .nav_lists {
+    #checkbox:checked ~ .main-nav--wrapper .nav_lists {
       transform: translateX(0);
     }
   }
