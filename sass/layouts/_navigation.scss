@@ -91,15 +91,14 @@
       display: flex;
       align-items: center;
 
+      .active > .link:active + .nav_dropdown--menu {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+
       .nav_dropdown {
         position: relative;
-
-        .link:active + .nav_dropdown--menu,
-        .active {
-          opacity: 1;
-          transform: translateY(0);
-          pointer-events: auto;
-        }
 
         .nav_dropdown--menu {
           position: absolute;

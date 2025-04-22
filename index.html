@@ -11,8 +11,6 @@
     <title>Podcast-Template</title>
 
     <link rel="stylesheet" href="/css/main.css" />
-
-    <script src="/js/script.js" defer></script>
   </head>
   <body>
     <main class="main-header">
@@ -50,7 +48,15 @@
               <a class="main-nav-link" href="more.html">
                 <li class="cta nav_item">More</li>
               </a>
-              <img src="/asset/icon/arrow-down.svg" alt="drop-down" />
+              <div class="nav_dropdown" data-dropdown>
+                <img
+                  src="/asset/icon/arrow-down.svg"
+                  class="link"
+                  data-dropdown-button
+                  alt="drop-down" />
+
+                <div class="nav_dropdown--menu">Dropdown--content</div>
+              </div>
             </span>
 
             <div class="nav_actions pb">
@@ -501,7 +507,7 @@
         </div>
       </div>
     </section>
-
+    <script src="/js/script.js" defer></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
