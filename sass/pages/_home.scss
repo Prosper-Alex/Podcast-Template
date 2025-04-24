@@ -600,6 +600,28 @@
         }
       }
     }
+
+    .listeners_testimonial--icon {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      margin: 3rem 0;
+
+      img {
+        padding: 2rem;
+      }
+
+      .stroke-black {
+        border: 1px solid $default-color;
+        border-radius: 50%;
+      }
+
+      .stroke-accent {
+        border: 1px solid $accent-color;
+        border-radius: 50%;
+      }
+    }
   }
 }
 
