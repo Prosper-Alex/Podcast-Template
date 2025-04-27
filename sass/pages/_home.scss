@@ -644,6 +644,10 @@
       img {
         padding: 2rem;
         object-fit: contain;
+
+        @include medium-phone {
+          padding: 1.5rem;
+        }
       }
 
       .stroke-black {
@@ -681,6 +685,18 @@
     //     height: 100%;
     //   }
     // }
+
+    .membership-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: -2rem;
+
+      a {
+        text-align: center;
+      }
+    }
 
     .membership_content {
       padding: 8rem 0;
@@ -770,9 +786,6 @@
           }
         }
       }
-    }
-
-    .membership-btn {
     }
   }
 }
