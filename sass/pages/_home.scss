@@ -827,4 +827,108 @@
       gap: 1rem;
     }
   }
+
+  &_container {
+    position: relative;
+
+    .episodes-icon {
+      position: absolute;
+      top: -15rem;
+      right: -15rem;
+
+      @include tab-port {
+        right: 5rem;
+      }
+
+      @include phone {
+        height: 7rem;
+        width: 7rem;
+      }
+
+      img {
+        @include phone {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .main-episodes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+
+      .episodes {
+        padding: 2rem;
+        border-radius: $border-radius-sm;
+        background-color: $default-background-color;
+
+        .episodes-heading {
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+
+          .episodes-textbox {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .heading-tertiary {
+              margin-bottom: 1.4rem;
+            }
+
+            .paragraph.em {
+              width: 90%;
+            }
+          }
+        }
+
+        .episodes-info {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 1.5rem 0 0 0;
+
+          .episodes-btn {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+          }
+
+          .episodes-profile {
+            display: flex;
+            align-items: center;
+            gap: 1.4rem;
+
+            .paragraph.rm {
+              font-weight: 700;
+            }
+
+            .profiles {
+              display: flex;
+              align-items: center;
+              gap: -1rem;
+
+              .margin-left {
+                margin-left: -1.5rem;
+                border: 2px solid $default-background-color;
+              }
+
+              img {
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+              }
+            }
+          }
+
+          a {
+            color: $davys-grey;
+          }
+        }
+      }
+      .episodes.box-shadow {
+      }
+    }
+  }
 }
