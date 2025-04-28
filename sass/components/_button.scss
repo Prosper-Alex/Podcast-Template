@@ -31,8 +31,10 @@
 
 .btn--transparent {
   @extend .btn-2;
-  background-color: transparent;
-  border: 2px solid $border-color;
+  background-color: $default-background-color;
+  border: 1px solid $default-color;
+  padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+  color: $default-color;
 }
 
 .btn-1 {
