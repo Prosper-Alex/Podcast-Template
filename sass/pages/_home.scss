@@ -1073,5 +1073,146 @@
   }
 
   &_subcription {
+    position: relative;
+    z-index: 110;
+
+    .sponsor_subcription--swirl {
+      position: absolute;
+      left: -5rem;
+      bottom: -2rem;
+      z-index: 0;
+
+      @include phone {
+        left: -3rem;
+        bottom: 5rem;
+        height: 10rem;
+        width: 10rem;
+      }
+
+      img {
+        z-index: 0;
+        @include phone {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .sponsor_subcription--blackstar {
+      position: absolute;
+      top: -4rem;
+      right: -5rem;
+      z-index: 0;
+
+      @include phone {
+        top: -3rem;
+        right: -3rem;
+        height: 10rem;
+        width: 10rem;
+      }
+
+      img {
+        z-index: 0;
+        @include phone {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .sponsor_subcription--wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      z-index: 101;
+
+      @include tab-port {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include phone {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .subcription-plan {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .plan {
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
+          border: 1.5px solid $default-color;
+          border-radius: $border-radius-rm;
+          padding: 2rem 4rem;
+
+          @include small-phone {
+            padding: 1.2rem 2.4rem;
+          }
+
+          .plan-textbox {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .paragraph.rm {
+              width: 60%;
+
+              @include medium-phone {
+                width: 90%;
+              }
+            }
+          }
+
+          .plan-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .plan-btn {
+              a {
+                margin: 0;
+              }
+            }
+
+            .plan-price {
+              display: flex;
+              flex-direction: column;
+              gap: 0.5rem;
+
+              .plan-amount {
+                font-size: 1.4rem;
+                font-weight: 700;
+              }
+
+              .plan-date {
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: $default-color;
+              }
+            }
+          }
+        }
+
+        .discount {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+          border: 1.5px solid $default-color;
+          border-radius: $border-radius-rm;
+          padding: 2rem 4rem;
+
+          .paragraph.rm {
+            font-weight: 700;
+          }
+
+          .discount-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+          }
+        }
+      }
+    }
   }
 }
