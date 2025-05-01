@@ -887,6 +887,7 @@
 
       .episodes {
         padding: 2rem;
+        border: 2px solid $default-color;
         border-radius: $border-radius-sm;
         background-color: $default-background-color;
 
@@ -977,6 +978,10 @@
 
           a {
             color: $davys-grey;
+
+            &:hover {
+              color: $default-background-color;
+            }
           }
         }
       }

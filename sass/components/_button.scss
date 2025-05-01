@@ -35,6 +35,16 @@
   border: 1px solid $default-color;
   padding: 0.8rem 1.2rem;
   color: $default-color;
+  transition: 500ms ease, border 500ms ease;
+}
+
+.btn--transparent:hover {
+  @extend .btn-2;
+  background-color: $default-color;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  color: #fff;
+  transition: transform all 500ms ease, border 500ms ease;
 }
 
 .btn-1 {
