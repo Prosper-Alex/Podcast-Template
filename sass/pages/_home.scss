@@ -794,7 +794,7 @@
 // SECTION EPISODE
 
 .episode {
-  margin: 5rem 0 7rem 0;
+  margin: 5rem 0 0rem 0;
   background-color: $champagne-color;
 
   .episode_wrapper {
@@ -1000,5 +1000,78 @@
         box-shadow: $drop-shadow--clicked;
       }
     }
+  }
+}
+
+// SECTION SPONSOD
+
+.sponsor {
+  &_wrapper {
+    position: relative;
+    .scribble-icon {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      z-index: 1;
+      margin-top: -4rem;
+      margin-bottom: 5rem;
+      height: 10rem;
+      width: 10rem;
+      transform: translateX(-50%);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &_content {
+    position: relative;
+    padding: 10rem 0 5rem 0;
+
+    .sponsor-icon {
+      position: absolute;
+
+      top: 5rem;
+      left: 20%;
+
+      @include tab-land--sm {
+        left: 15%;
+      }
+
+      @include tab-port {
+        left: 5rem;
+      }
+
+      @include phone {
+        height: 7rem;
+        width: 7rem;
+      }
+
+      @include small-phone {
+        left: 1.5rem;
+      }
+
+      img {
+        @include phone {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .textbox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+  }
+
+  &_subcription {
   }
 }
