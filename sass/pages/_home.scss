@@ -1079,7 +1079,7 @@
     .sponsor_subcription--swirl {
       position: absolute;
       left: -5rem;
-      bottom: -2rem;
+      bottom: -3.5rem;
       z-index: 0;
 
       @include phone {
@@ -1100,8 +1100,8 @@
 
     .sponsor_subcription--blackstar {
       position: absolute;
-      top: -4rem;
-      right: -5rem;
+      top: -6rem;
+      right: -6rem;
       z-index: 0;
 
       @include phone {
@@ -1149,6 +1149,7 @@
           padding: 2rem 4rem;
           height: 35rem;
           z-index: 101;
+          background-color: rgba(255, 255, 255, 1);
 
           @include small-phone {
             padding: 1.2rem 2.4rem;
@@ -1164,6 +1165,20 @@
 
               @include medium-phone {
                 width: 90%;
+              }
+            }
+
+            .text-wrap {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              a {
+                padding: 0.6rem;
+                font-weight: 700;
+                background-color: $accent-color;
+                color: $default-background-color;
+                border-radius: $border-radius-rm;
               }
             }
           }
@@ -1199,6 +1214,11 @@
           }
         }
 
+        .plan.accent-bg {
+          background-color: $champagne-color;
+          border: 1.5px solid $accent-color;
+        }
+
         .discount {
           position: relative;
           display: flex;
@@ -1210,6 +1230,7 @@
           padding: 2rem 4rem;
           height: 35rem;
           z-index: 101;
+          background-color: rgba(255, 255, 255, 1);
 
           .paragraph.rm {
             font-weight: 700;
@@ -1220,10 +1241,19 @@
             flex-direction: column;
             gap: 0.5rem;
 
+            .paragraph.md {
+              font-weight: 500;
+            }
+
             .bold {
-              font-size: bold;
+              font-size: 700;
             }
           }
+        }
+
+        .discount.accent-bg {
+          background-color: $champagne-color;
+          border: 1.5px solid $accent-color;
         }
       }
     }
