@@ -1145,6 +1145,7 @@
           border: 1.5px solid $default-color;
           border-radius: $border-radius-rm;
           padding: 2rem 4rem;
+          height: 35rem;
 
           @include small-phone {
             padding: 1.2rem 2.4rem;
@@ -1165,6 +1166,7 @@
           }
 
           .plan-info {
+            flex: auto;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -1197,10 +1199,12 @@
         .discount {
           display: flex;
           flex-direction: column;
+          justify-content: center;
           gap: 1.5rem;
           border: 1.5px solid $default-color;
           border-radius: $border-radius-rm;
           padding: 2rem 4rem;
+          height: 35rem;
 
           .paragraph.rm {
             font-weight: 700;
