@@ -1151,8 +1151,12 @@
           z-index: 101;
           background-color: rgba(255, 255, 255, 1);
 
+          @include medium-phone {
+            height: 30rem;
+          }
+
           @include small-phone {
-            padding: 1.2rem 2.4rem;
+            padding: 1.5rem 2.4rem;
           }
 
           .plan-textbox {
@@ -1231,6 +1235,10 @@
           height: 35rem;
           z-index: 101;
           background-color: rgba(255, 255, 255, 1);
+
+          @include medium-phone {
+            height: 30rem;
+          }
 
           .paragraph.rm {
             font-weight: 700;

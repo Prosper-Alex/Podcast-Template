@@ -59,6 +59,23 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.light-shadow {
+  box-shadow: $btn-shadow;
+  background-color: $default-color;
+  border-radius: $border-radius-rm;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.light-shadow:hover {
+  transform: translateY(-2px);
+  box-shadow: $btn-shadow--hover;
+}
+
+.light-shadow:active {
+  transform: translateY(2px);
+  box-shadow: $btn-shadow--clicked;
+}
+
 .black-bg:hover {
   transform: translateY(-2px);
   box-shadow: $btn-shadow--hover;
