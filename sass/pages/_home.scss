@@ -859,11 +859,15 @@
       img {
         position: absolute;
         top: -15rem;
-        right: -15rem;
+        right: -10rem;
+        height: 19rem;
+        width: 15rem;
 
         @include tab-land {
-          top: -20rem;
-          right: -7rem;
+          top: -15rem;
+          right: -10rem;
+          height: 19rem;
+          width: 15rem;
         }
 
         @include phone {
@@ -1003,10 +1007,11 @@
   }
 }
 
-// SECTION SPONSOD
+// SECTION SPONSOR
 
 .sponsor {
   &_wrapper {
+    margin-bottom: 15rem;
     position: relative;
     .scribble-icon {
       position: absolute;
@@ -1263,6 +1268,30 @@
           background-color: $champagne-color;
           border: 1.5px solid $accent-color;
         }
+      }
+    }
+  }
+}
+
+// SECTION ARTICLE
+
+.article {
+  &_wrapper {
+    position: relative;
+    .scribble-icon {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      z-index: 1;
+      margin-top: -4rem;
+      margin-bottom: 5rem;
+      height: 10rem;
+      width: 10rem;
+      transform: translateX(-50%);
+
+      img {
+        width: 100%;
+        height: 100%;
       }
     }
   }
