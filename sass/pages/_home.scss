@@ -1295,4 +1295,39 @@
       }
     }
   }
+
+  &_heading {
+    padding: 10rem 0 5rem 0;
+
+    .textbox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+  }
+
+  &_container {
+    position: relative;
+
+    .article-blackstar--icon {
+      position: absolute;
+      left: -8rem;
+      top: -7rem;
+    }
+
+    .sharp-edge--icon {
+      position: absolute;
+      bottom: 7rem;
+      right: -2rem;
+    }
+  }
+
+  &_container--wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
