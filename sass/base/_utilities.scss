@@ -59,6 +59,32 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.black-bg:active {
+  transform: translateY(2px);
+  box-shadow: $btn-shadow--clicked;
+}
+
+.black-bg:hover {
+  transform: translateY(-2px);
+  box-shadow: $btn-shadow--hover;
+}
+
+.dark-bg {
+  background-color: $default-color;
+  border-radius: $border-radius-rm;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dark-bg:active {
+  transform: translateY(2px);
+  box-shadow: $black-shadow--clicked;
+}
+
+.dark-bg:hover {
+  transform: translateY(-2px);
+  box-shadow: $black-shadow--hover;
+}
+
 .light-shadow {
   box-shadow: $btn-shadow;
   background-color: $default-color;
@@ -72,16 +98,6 @@
 }
 
 .light-shadow:active {
-  transform: translateY(2px);
-  box-shadow: $btn-shadow--clicked;
-}
-
-.black-bg:hover {
-  transform: translateY(-2px);
-  box-shadow: $btn-shadow--hover;
-}
-
-.black-bg:active {
   transform: translateY(2px);
   box-shadow: $btn-shadow--clicked;
 }

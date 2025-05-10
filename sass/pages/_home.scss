@@ -1326,6 +1326,10 @@
       bottom: -10rem;
       right: -8rem;
       z-index: 10;
+
+      @include tab-port {
+        display: none;
+      }
     }
   }
 
@@ -1337,11 +1341,15 @@
     width: 100%;
     z-index: 100;
 
+    @include tab-land--sm {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 5rem;
+    }
+
     .article_card {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
       padding: 2rem;
       border: 1.5px solid #000;
       border-radius: $border-radius-sm;
@@ -1351,6 +1359,10 @@
         height: 35rem;
         width: 100%;
         margin-bottom: 5rem;
+
+        @include small-phone {
+          height: 30rem;
+        }
 
         img {
           height: 100%;
@@ -1371,17 +1383,35 @@
           @include sm-desktop {
             width: 70%;
           }
+
+          @include medium-phone {
+            width: 90%;
+          }
         }
       }
 
       .article_info {
         display: flex;
+        align-items: center;
         justify-content: space-between;
+        margin-top: 5rem;
+        border-top: 1px solid #000;
+
+        @include small-phone {
+          flex-direction: column;
+        }
 
         .article-btn {
           display: flex;
           align-items: center;
           gap: 1rem;
+          margin-top: 3rem;
+        }
+
+        .article-date {
+          display: flex;
+          align-items: center;
+          margin-top: 3rem;
         }
       }
     }
