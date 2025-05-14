@@ -1425,3 +1425,107 @@
     }
   }
 }
+
+// SECTION APP
+
+.app {
+  margin: 4rem 0 7rem 0;
+  background-color: $alice-blue;
+  &_wrapper {
+    position: relative;
+    .scribble-icon {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      z-index: 1;
+      margin-top: -4rem;
+      margin-bottom: 5rem;
+      height: 10rem;
+      width: 10rem;
+      transform: translateX(-50%);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &_content {
+    padding: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .textbox {
+      margin-top: 4rem;
+
+      .paragraph.sm {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        border: 1.5px solid $accent-color;
+        border-radius: $border-radius-rm;
+        width: fit-content;
+      }
+
+      .heading-secondary {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+
+        @include phone {
+          width: 90%;
+        }
+      }
+
+      .paragraph {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 1rem;
+      }
+    }
+
+    .btn-wrap {
+      position: relative;
+      margin-top: 10rem;
+
+      .sparkle-icon {
+        position: absolute;
+
+        top: -1.4rem;
+        left: 20rem;
+
+        @include tab-port {
+          left: 5rem;
+        }
+
+        @include phone {
+          height: 7rem;
+          width: 7rem;
+        }
+
+        img {
+          @include phone {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .recommeded-apps {
+      .app-logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
