@@ -1459,6 +1459,7 @@
     width: 100%;
     height: 100%;
     margin-top: -4rem;
+    padding-top: 5rem;
 
     .content-icon {
       flex: 1;
@@ -1472,26 +1473,82 @@
       }
     }
 
-    .content-icon.trending {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      flex: 1;
-      margin-left: 4rem;
-      width: 100%;
+    .trending-wrap {
+      position: relative;
+      display: flex;
+      align-self: flex-end;
 
-      img {
-        object-fit: contain;
-        margin-right: 5rem;
+      .sparkle-icon {
+        position: absolute;
+        top: -4rem;
+        left: 2rem;
+
+        @include tab-port {
+          left: 5rem;
+        }
+
+        @include phone {
+          height: 7rem;
+          width: 7rem;
+        }
+
+        img {
+          @include phone {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+
+      .sparkle-small {
+        position: absolute;
+
+        top: -6rem;
+        left: 10rem;
+        z-index: 1;
+      }
+
+      .content-icon.trending {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        flex: 1;
+        margin-left: 4rem;
+        width: 100%;
+
+        img {
+          object-fit: contain;
+          margin-right: 5rem;
+        }
       }
     }
 
-    .content-icon.playlist {
-      position: absolute;
-      flex: 1;
-      transform: translateX(-0%);
-      left: 50%;
-      width: 100%;
+    .playlist-wrap {
+      position: relative;
+      z-index: 110;
+
+      .sketch-icon {
+        position: absolute;
+        right: 12rem;
+        bottom: 0;
+
+        img {
+          z-index: 10;
+        }
+      }
+
+      .content-icon.playlist {
+        position: absolute;
+        flex: 1;
+        transform: translateX(-0%);
+        left: 50%;
+        width: 100%;
+
+        img {
+          z-index: 50;
+          position: relative;
+        }
+      }
     }
   }
 
