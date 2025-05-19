@@ -1429,7 +1429,7 @@
 // SECTION APP
 
 .app {
-  margin: 4rem 0 7rem 0;
+  margin: 4rem 0 0 0;
   background-color: $alice-blue;
   &_wrapper {
     position: relative;
@@ -1450,6 +1450,7 @@
       }
     }
   }
+
   &_content-wrap {
     display: flex;
     justify-content: space-between;
@@ -1485,11 +1486,16 @@
 
         @include tab-port {
           left: 5rem;
+          top: -25rem;
         }
 
         @include phone {
           height: 7rem;
           width: 7rem;
+        }
+
+        @include medium-phone {
+          left: 2rem;
         }
 
         img {
@@ -1506,6 +1512,15 @@
         top: -6rem;
         left: 10rem;
         z-index: 1;
+
+        @include tab-port {
+          top: -35rem;
+          left: 10rem;
+        }
+
+        @include medium-phone {
+          left: 2rem;
+        }
       }
 
       .content-icon.trending {
@@ -1532,8 +1547,18 @@
         right: 12rem;
         bottom: 0;
 
+        @include medium-phone {
+          display: none;
+        }
+
         img {
+          height: 15rem;
           z-index: 10;
+
+          @include tab-port {
+            height: 8rem;
+            width: 8rem;
+          }
         }
       }
 
@@ -1545,8 +1570,9 @@
         width: 100%;
 
         img {
-          z-index: 50;
           position: relative;
+          z-index: 50;
+          margin-top: 10rem;
         }
       }
     }
@@ -1613,8 +1639,9 @@
         top: -1.4rem;
         left: 20rem;
 
-        @include tab-port {
-          left: 5rem;
+        @include small-phone {
+          left: 19rem;
+          top: -1.5rem;
         }
 
         @include phone {
