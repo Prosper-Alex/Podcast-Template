@@ -1669,3 +1669,74 @@
     }
   }
 }
+
+.footer {
+  &_wrapper {
+    margin: 10rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .footer_content-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8rem;
+
+      .footer-head {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        .textbox {
+          display: flex;
+          gap: 2.4rem;
+
+          .text {
+            display: flex;
+            align-items: end;
+          }
+        }
+
+        .logo-box {
+          display: flex;
+          gap: 2rem;
+          width: 100%;
+        }
+      }
+
+      .footer-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+      }
+
+      .footer-info {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        .info-logos {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+          width: 100%;
+
+          img {
+            width: 15rem;
+          }
+        }
+
+        .info-apps {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          width: 100%;
+
+          .apps {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
