@@ -1,2 +1,125 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+
+.footer {
+  &_wrapper {
+    margin: 10rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include tab-port {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4rem;
+    }
+
+    .footer_content-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8rem;
+
+      @include tab-port {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4rem;
+      }
+
+      .footer-head {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        .textbox {
+          display: flex;
+          gap: 2.4rem;
+
+          .text {
+            display: flex;
+            align-items: end;
+          }
+        }
+
+        .logo-box {
+          display: flex;
+          gap: 2rem;
+          width: 100%;
+        }
+      }
+
+      .footer-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        cursor: pointer;
+      }
+
+      .footer-list li {
+        cursor: pointer;
+
+        &:hover {
+          color: $accent-color;
+        }
+      }
+
+      .footer-info {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        .info-logos {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+          align-items: normal;
+
+          @include tab-port {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+          }
+
+          img {
+            width: 15rem;
+          }
+        }
+
+        .info-apps {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          width: 100%;
+
+          .apps {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  .foot {
+    &_wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1.5px solid $davys-grey;
+      padding: 4rem 0;
+
+      @include medium-phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .foot-list {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
