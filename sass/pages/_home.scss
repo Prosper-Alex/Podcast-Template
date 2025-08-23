@@ -503,8 +503,8 @@
         }
 
         @include phone {
-          height: 7rem;
-          width: 7rem;
+          height: 4rem;
+          width: 4rem;
         }
 
         img {
@@ -643,8 +643,9 @@
       margin: 3rem 0;
 
       img {
-        padding: 2rem;
+        padding: 1.4rem;
         object-fit: contain;
+        height: 4.5rem;
 
         @include medium-phone {
           padding: 1.5rem;
