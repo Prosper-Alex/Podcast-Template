@@ -7,6 +7,11 @@
   box-sizing: inherit;
 }
 
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
 body {
   box-sizing: border-box;
   background-color: $default-background-color;

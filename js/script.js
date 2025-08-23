@@ -12,3 +12,9 @@ document.addEventListener("click", (e) => {
     dropdown.classList.remove("active");
   });
 });
+
+// Disable draggable attribute on all images
+document.querySelectorAll("img").forEach((img) => {
+  img.setAttribute("draggable", "false");
+  img.addEventListener("dragstart", (e) => e.preventDefault());
+});
