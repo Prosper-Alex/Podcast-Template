@@ -13,22 +13,28 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <title>Podcast-Template</title>
 
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <title>Podcast-Template</title>
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
     <main class="main-header">
-      <nav class="navigation center-children--bg">
+      <nav
+        class="navigation center-children--bg"
+        data-aos="fade-down"
+        data-aos-duration="1000">
         <input type="checkbox" id="checkbox" />
         <div class="main-nav--wrapper">
-          <div class="logo">
+          <div class="logo" data-aos="zoom-in" data-aos-delay="300">
             <a class="main-nav-link" href="index.html">
               <img src="/asset/logo/podcast-logo.svg" alt="podcast-logo" />
             </a>
           </div>
 
-          <ul class="nav_lists">
+          <ul class="nav_lists" data-aos="fade-left" data-aos-delay="400">
             <span class="nav_item-wrapper">
               <a class="main-nav-link" href="episodes.html">
                 <li class="cta nav_item">Episodes</li>
@@ -37,16 +43,13 @@
 
             <div class="nav_item-wrapper">
               <a class="main-nav-link" href="about.html">About</a>
-
               <div class="nav_dropdown" data-dropdown>
                 <img
                   src="/asset/icon/arrow-down.svg"
                   class="link"
                   data-dropdown-button
                   alt="drop-down" />
-
                 <div class="nav_dropdown--menu">
-                  <!-- You can replace this with actual links -->
                   <a href="#">Team</a>
                   <a href="#">Vision</a>
                   <a href="#">Mission</a>
@@ -63,7 +66,6 @@
                   class="link"
                   data-dropdown-button
                   alt="drop-down" />
-
                 <div class="nav_dropdown--menu">
                   <a href="episodes.html">🎧 All Episodes</a>
                   <a href="#">🎤 Guest Speakers</a>
@@ -74,27 +76,28 @@
               </div>
             </span>
 
-            <div class="nav_actions pb">
-              <a href="#" class="cta border"> Recent Episodes</a
-              ><a href="#" class="cta black-bg">Subscribe</a>
+            <div class="nav_actions pb" data-aos="fade-up" data-aos-delay="500">
+              <a href="#" class="cta border"> Recent Episodes</a>
+              <a href="#" class="cta black-bg">Subscribe</a>
             </div>
           </ul>
         </div>
-
         <label class="nav_toggle" for="checkbox">
           <span class="open"><ion-icon name="menu"></ion-icon></span>
-          <span class="close"><ion-icon name="close"></ion-icon></span
-        ></label>
-
+          <span class="close"><ion-icon name="close"></ion-icon></span>
+        </label>
         <div class="nav_actions dk">
-          <a href="#" class="cta border"> Recent Episodes</a
-          ><a href="#" class="cta black-bg">Subscribe</a>
+          <a href="#" class="cta border"> Recent Episodes</a>
+          <a href="#" class="cta black-bg">Subscribe</a>
         </div>
       </nav>
 
       <header class="header">
         <div class="header_wrapper">
-          <div class="header_content">
+          <div
+            class="header_content"
+            data-aos="fade-right"
+            data-aos-duration="1200">
             <figure class="content-icon swirl">
               <img src="/asset/icon/hero-shape-swirl.svg" alt="" />
             </figure>
@@ -107,7 +110,13 @@
               <p class="paragraph">
                 We cover all kinds of categories and a weekly special guest.
               </p>
-              <a href="#" class="cta black-bg">SUBSCRIBE</a>
+              <a
+                href="#"
+                class="cta black-bg"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+                >SUBSCRIBE</a
+              >
             </div>
 
             <figure class="content-icon stars">
@@ -115,17 +124,19 @@
             </figure>
           </div>
 
-          <div class="header_image">
+          <div
+            class="header_image"
+            data-aos="fade-left"
+            data-aos-duration="1200">
             <div class="podcast">
-              <!-- Card 1: Self-confidence -->
-              <div class="podcast-card">
+              <!-- Podcast cards -->
+              <div class="podcast-card" data-aos="zoom-in" data-aos-delay="200">
                 <figure class="podcast-image .podcard-left">
                   <img
                     src="/asset/image/hero-cover--1.png"
                     alt="Self Confidence"
                     class="card-image" />
                 </figure>
-
                 <div class="logos">
                   <img
                     src="/asset/icon/googlepodcast-icon.svg"
@@ -140,25 +151,18 @@
                     alt="YouTube"
                     class="logo youtube-logo" />
                 </div>
-
                 <div class="card-overlay card-overlay-left">
                   <h3 class="heading-tertiary md">Tesla Autopilot</h3>
-
-                  <!-- Floating Icons -->
-                  <!-- <img src="squiggle.svg" class="icon squiggle-top-left" />
-                  <img src="black-star.svg" class="icon star-bottom-left" />
-                  <img src="sparkle.svg" class="icon sparkle-top-right" /> -->
                 </div>
               </div>
-              <!-- Card 2: Self-confidence -->
-              <div class="podcast-card">
+
+              <div class="podcast-card" data-aos="zoom-in" data-aos-delay="400">
                 <figure class="podcast-image podcard">
                   <img
                     src="/asset/image/hero-cover--2.png"
                     alt="Self Confidence"
                     class="card-image" />
                 </figure>
-
                 <div class="logos">
                   <img
                     src="/asset/icon/googlepodcast-icon.svg"
@@ -173,25 +177,18 @@
                     alt="YouTube"
                     class="logo youtube-logo" />
                 </div>
-
                 <div class="card-overlay">
                   <h3 class="heading-tertiary md">Self-confidence</h3>
-
-                  <!-- Floating Icons -->
-                  <!-- <img src="squiggle.svg" class="icon squiggle-top-left" />
-                  <img src="black-star.svg" class="icon star-bottom-left" />
-                  <img src="sparkle.svg" class="icon sparkle-top-right" /> -->
                 </div>
               </div>
-              <!-- Card 3: Self-confidence -->
-              <div class="podcast-card">
+
+              <div class="podcast-card" data-aos="zoom-in" data-aos-delay="600">
                 <figure class="podcast-image podcard">
                   <img
                     src="/asset/image/hero-cover--3.png"
                     alt="Self Confidence"
                     class="card-image" />
                 </figure>
-
                 <div class="logos">
                   <img
                     src="/asset/icon/googlepodcast-icon.svg"
@@ -206,25 +203,18 @@
                     alt="YouTube"
                     class="logo youtube-logo" />
                 </div>
-
                 <div class="card-overlay">
                   <h3 class="heading-tertiary md">Perplexed Mind</h3>
-
-                  <!-- Floating Icons -->
-                  <!-- <img src="squiggle.svg" class="icon squiggle-top-left" />
-                  <img src="black-star.svg" class="icon star-bottom-left" />
-                  <img src="sparkle.svg" class="icon sparkle-top-right" /> -->
                 </div>
               </div>
-              <!-- Card 4: Self-confidence -->
-              <div class="podcast-card">
+
+              <div class="podcast-card" data-aos="zoom-in" data-aos-delay="800">
                 <figure class="podcast-image podcard">
                   <img
                     src="/asset/image/hero-cover--4.png"
                     alt="Self Confidence"
                     class="card-image" />
                 </figure>
-
                 <div class="logos">
                   <img
                     src="/asset/icon/googlepodcast-icon.svg"
@@ -239,25 +229,21 @@
                     alt="YouTube"
                     class="logo youtube-logo" />
                 </div>
-
                 <div class="card-overlay">
                   <h3 class="heading-tertiary md">Women’s Rights</h3>
-
-                  <!-- Floating Icons -->
-                  <!-- <img src="squiggle.svg" class="icon squiggle-top-left" />
-                  <img src="black-star.svg" class="icon star-bottom-left" />
-                  <img src="sparkle.svg" class="icon sparkle-top-right" /> -->
                 </div>
               </div>
-              <!-- Card 5: Self-confidence -->
-              <div class="podcast-card">
+
+              <div
+                class="podcast-card"
+                data-aos="zoom-in"
+                data-aos-delay="1000">
                 <figure class="podcast-image podcard-right">
                   <img
                     src="/asset/image/hero-cover--5.png"
                     alt="Self Confidence"
                     class="card-image" />
                 </figure>
-
                 <div class="logos">
                   <img
                     src="/asset/icon/googlepodcast-icon.svg"
@@ -272,22 +258,16 @@
                     alt="YouTube"
                     class="logo youtube-logo" />
                 </div>
-
                 <div class="card-overlay card-overlay-right">
                   <h3 class="heading-tertiary md">Social Class</h3>
-
-                  <!-- Floating Icons -->
-                  <!-- <img src="squiggle.svg" class="icon squiggle-top-left" />
-                  <img src="black-star.svg" class="icon star-bottom-left" />
-                  <img src="sparkle.svg" class="icon sparkle-top-right" /> -->
                 </div>
               </div>
             </div>
 
-            <!-- <marquee
-              behavior="smooth"
-              direction="seamless" -->
-            <div class="header_logos center-children--bg">
+            <div
+              class="header_logos center-children--bg"
+              data-aos="fade-up"
+              data-aos-duration="1200">
               <div class="header_logos--wrapper">
                 <div class="header_logos--content">
                   <div class="logo-text">
@@ -311,58 +291,54 @@
                 </div>
               </div>
             </div>
-            <!-- </marquee> -->
           </div>
 
-          <div class="scribble-icon">
+          <div class="scribble-icon" data-aos="fade-up" data-aos-delay="500">
             <img src="/asset/icon/Scribble.svg" alt="scribble-icon" />
           </div>
         </div>
       </header>
     </main>
 
-    <section class="inspired center-children--bg">
+    <section
+      class="inspired center-children--bg"
+      data-aos="fade-up"
+      data-aos-duration="1200">
       <div class="inspired_wrapper">
         <div class="content">
           <h2 class="heading-secondary md">
             Talk. Listen. Get inspired by every minute of it.
           </h2>
-
           <div class="thought-wrapper">
-            <div class="thought">
+            <div class="thought" data-aos="fade-right" data-aos-delay="300">
               <figure class="thought-img">
                 <img
                   src="/asset/icon/Illustration-01.svg"
                   alt="illustration-01--icon" />
               </figure>
-
               <p class="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur ac ultrices odio.
               </p>
             </div>
-            <div class="thought">
+            <div class="thought" data-aos="fade-left" data-aos-delay="500">
               <figure class="thought-img">
                 <img
                   src="/asset/icon/Illustration-02.svg"
                   alt="illustration-02--icon" />
               </figure>
-
               <p class="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur ac ultrices odio.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="testimonial">
+        <div class="testimonial" data-aos="zoom-in" data-aos-delay="700">
           <div class="testimonial-text">
             <div class="heading-primary bg">“</div>
             <div class="heading-tertiary md">
               One of the best daily podcasts that covers every topic on Spotify.
             </div>
-
             <div class="testimonial-info">
               <div class="profile-info">
                 <figure class="profile-img">
@@ -374,7 +350,6 @@
                   <p class="paragraph">John Smith,</p>
                 </div>
               </div>
-
               <div class="job-info">
                 <figure class="job-logo">
                   <img
@@ -387,7 +362,6 @@
               </div>
             </div>
           </div>
-
           <figure class="testimonial-swirl">
             <img src="/asset/icon/swirl-small.svg" alt="swirl-small" />
           </figure>
@@ -398,35 +372,32 @@
       </div>
     </section>
 
-    <section class="listeners">
+    <section class="listeners" data-aos="fade-up" data-aos-duration="1200">
       <div class="listeners_wrapper center-children--bg">
         <div class="scribble-icon">
           <img src="asset/icon/scribble-black.svg" alt="scribble-icon" />
         </div>
-        <div class="listeners_content">
+        <div class="listeners_content" data-aos="fade-up" data-aos-delay="400">
           <div class="textbox">
             <h2 class="heading-secondary md">What our listeners say</h2>
             <p class="paragraph">Their experience throughout every platform</p>
           </div>
-
           <figure class="sparkle-icon">
             <img src="/asset/icon/Sparkle.svg" alt="sparkle-icon" />
           </figure>
         </div>
       </div>
 
-      <div class="listeners_testimonial center-children--bg">
+      <div
+        class="listeners_testimonial center-children--bg"
+        data-aos="fade-up"
+        data-aos-delay="600">
         <div class="testimonial--wrapper">
-          <div class="testimony">
+          <div class="testimony" data-aos="zoom-in" data-aos-delay="200">
             <div class="testimony-textbox">
               <h1 class="heading-primary bg">“</h1>
-
-              <p class="paragraph">
-                Lorem ipsum dolor sit amet consectet piscing elit, sed do
-                eiusmod tempor incidi ut labore et dolore magna aliqua.
-              </p>
+              <p class="paragraph">Lorem ipsum dolor sit amet.</p>
             </div>
-
             <div class="testimonial--info">
               <div class="profile-info">
                 <figure class="profile-img">
@@ -438,29 +409,22 @@
                   <p class="paragraph">Luna lovegood,</p>
                 </div>
               </div>
-
               <div class="job-info">
                 <figure class="job-logo">
                   <img
                     src="/asset/icon/spotify-small.svg"
                     alt="spotify-logo--small" />
                 </figure>
-                <div class="job-title">
-                  <p class="pararaph rm">Spotify</p>
-                </div>
+                <div class="job-title"><p class="pararaph rm">Spotify</p></div>
               </div>
             </div>
           </div>
-          <div class="testimony">
+
+          <div class="testimony" data-aos="zoom-in" data-aos-delay="400">
             <div class="testimony-textbox">
               <h1 class="heading-primary bg">“</h1>
-
-              <p class="paragraph">
-                Lorem ipsum dolor sit amet consectet piscing elit, sed do
-                eiusmod tempor incidi ut labore et dolore magna aliqua.
-              </p>
+              <p class="paragraph">Lorem ipsum dolor sit amet.</p>
             </div>
-
             <div class="testimonial--info">
               <div class="profile-info">
                 <figure class="profile-img">
@@ -472,7 +436,6 @@
                   <p class="paragraph">Emily Blunt,</p>
                 </div>
               </div>
-
               <div class="job-info">
                 <figure class="job-logo">
                   <img
@@ -485,16 +448,12 @@
               </div>
             </div>
           </div>
-          <div class="testimony">
+
+          <div class="testimony" data-aos="zoom-in" data-aos-delay="600">
             <div class="testimony-textbox">
               <h1 class="heading-primary bg">“</h1>
-
-              <p class="paragraph">
-                Lorem ipsum dolor sit amet consectet piscing elit, sed do
-                eiusmod tempor incidi ut labore et dolore magna aliqua.
-              </p>
+              <p class="paragraph">Lorem ipsum dolor sit amet.</p>
             </div>
-
             <div class="testimonial--info">
               <div class="profile-info">
                 <figure class="profile-img">
@@ -506,16 +465,13 @@
                   <p class="paragraph">Mia Winters,</p>
                 </div>
               </div>
-
               <div class="job-info">
                 <figure class="job-logo">
                   <img
                     src="/asset/icon/spotify-small.svg"
                     alt="spotify-logo--small" />
                 </figure>
-                <div class="job-title">
-                  <p class="pararaph rm">Spotify</p>
-                </div>
+                <div class="job-title"><p class="pararaph rm">Spotify</p></div>
               </div>
             </div>
           </div>
@@ -531,18 +487,18 @@
             src="/asset/icon/Stroke-right--accent.svg"
             alt="Stroke-icon" />
         </figure>
-
         <div class="scribble-icon--down">
           <img src="asset/icon/scribble-black.svg" alt="scribble-icon" />
         </div>
       </div>
     </section>
 
-    <section class="membership">
+    <section class="membership" data-aos="fade-up" data-aos-duration="1200">
       <div class="membership_wrapper center-children--bg">
         <div class="membership_content">
           <div class="textbox">
             <h2 class="heading-secondary md">Membership benefits</h2>
+
             <p class="paragraph">Become our sponsor and get all benefits</p>
           </div>
 
@@ -1320,7 +1276,15 @@
     </footer>
     <script src="/js/script.js" defer></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, // animation only once
+        offset: 120, // offset (in px) from the original trigger point
+        duration: 1000, // values from 0 to 3000, default is 400
+      });
+    </script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
