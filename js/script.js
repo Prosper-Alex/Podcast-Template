@@ -7,7 +7,8 @@ document.addEventListener("click", (e) => {
     currentDropdown.classList.toggle("active");
   }
 
-  document.querySelectorAll("[data-dropdown].active").forEach((dropdown) => {
+ // Dropdown functionality 
+document.querySelectorAll("[data-dropdown].active").forEach((dropdown) => {
     if (dropdown === currentDropdown) return;
     dropdown.classList.remove("active");
   });
