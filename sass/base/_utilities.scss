@@ -110,3 +110,8 @@
 .davvy-grey {
   color: $davys-grey;
 }
+
+.btn-shadow {
+  transform: translateY(2px);
+  box-shadow: $black-shadow--clicked;
+}

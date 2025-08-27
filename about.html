@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <title>Podcast-Template</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <main class="main-header">
+      <nav
+        class="navigation center-children--bg"
+        data-aos="fade-down"
+        data-aos-duration="1000">
+        <input type="checkbox" id="checkbox" />
+        <div class="main-nav--wrapper">
+          <div class="logo" data-aos="zoom-in" data-aos-delay="300">
+            <a class="main-nav-link" href="index.html">
+              <img src="/asset/logo/podcast-logo.svg" alt="podcast-logo" />
+            </a>
+          </div>
+
+          <ul class="nav_lists" data-aos-delay="400">
+            <span class="nav_item-wrapper">
+              <a class="main-nav-link" href="episodes.html">
+                <li class="cta nav_item">Episodes</li>
+              </a>
+            </span>
+
+            <div class="nav_item-wrapper">
+              <a class="main-nav-link" href="about.html">About</a>
+              <div class="nav_dropdown" data-dropdown>
+                <img
+                  src="/asset/icon/arrow-down.svg"
+                  class="link"
+                  data-dropdown-button
+                  alt="drop-down" />
+                <div class="nav_dropdown--menu">
+                  <a href="#">Team</a>
+                  <a href="#">Vision</a>
+                  <a href="#">Mission</a>
+                </div>
+              </div>
+            </div>
+            <span class="nav_item-wrapper">
+              <a class="main-nav-link" href="more.html">
+                <li class="cta nav_item">More</li>
+              </a>
+              <div class="nav_dropdown" data-dropdown>
+                <img
+                  src="/asset/icon/arrow-down.svg"
+                  class="link"
+                  data-dropdown-button
+                  alt="drop-down" />
+                <div class="nav_dropdown--menu">
+                  <a href="episodes.html">🎧 All Episodes</a>
+                  <a href="#">🎤 Guest Speakers</a>
+                  <a href="#">📰 Newsletter</a>
+                  <a href="#">📅 Live Shows</a>
+                  <a href="#">📬 Contact Us</a>
+                </div>
+              </div>
+            </span>
+
+            <div class="nav_actions pb" data-aos="fade-up" data-aos-delay="500">
+              <a href="#" class="cta border"> Recent Episodes</a>
+              <a href="#" class="cta black-bg">Subscribe</a>
+            </div>
+          </ul>
+        </div>
+        <label class="nav_toggle" for="checkbox">
+          <span class="open"><ion-icon name="menu"></ion-icon></span>
+          <span class="close"><ion-icon name="close"></ion-icon></span>
+        </label>
+        <div class="nav_actions dk">
+          <a href="#" class="cta border"> Recent Episodes</a>
+          <a href="#" class="cta black-bg">Subscribe</a>
+        </div>
+      </nav>
+
+      <header class="header">
+        <div class="header_wrapper">
+          <div
+            class="header_content"
+            data-aos="fade-right"
+            data-aos-duration="1200">
+            <figure class="content-icon swirl">
+              <img src="/asset/icon/hero-shape-swirl.svg" alt="" />
+            </figure>
+
+            <div class="content-textbox">
+              <h1 class="heading-primary bg span-item">
+                About
+                <span class="accent-color heading-primary bg">Pod of Cast</span>
+              </h1>
+              <p class="paragraph">
+                Pod of Cast is your go-to space for fresh ideas and meaningful
+                stories. Each week, we explore diverse topics with a special
+                guest sharing unique insights.
+              </p>
+              <a
+                href="#"
+                class="cta black-bg"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+                >SUBSCRIBE</a
+              >
+              <a
+                href="#"
+                class="cta black-bg"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+                >SUBSCRIBE</a
+              >
+            </div>
+
+            <figure class="content-icon stars">
+              <img src="/asset/icon/hero-shape-stars.svg" alt="" />
+            </figure>
+          </div>
+
+          <div class="scribble-icon" data-aos="fade-up" data-aos-delay="500">
+            <img src="/asset/icon/Scribble.svg" alt="scribble-icon" />
+          </div>
+        </div>
+      </header>
+    </main>
+
+    <section
+      class="inspired center-children--bg"
+      data-aos="fade-up"
+      data-aos-duration="1200">
+      <div class="inspired_wrapper">
+        <div class="content">
+          <h2 class="heading-secondary md">
+            Talk. Listen. Get inspired by every minute of it.
+          </h2>
+          <div class="thought-wrapper">
+            <div class="thought" data-aos="fade-right" data-aos-delay="300">
+              <figure class="thought-img">
+                <img
+                  src="/asset/icon/Illustration-01.svg"
+                  alt="illustration-01--icon" />
+              </figure>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div class="thought" data-aos="fade-left" data-aos-delay="500">
+              <figure class="thought-img">
+                <img
+                  src="/asset/icon/Illustration-02.svg"
+                  alt="illustration-02--icon" />
+              </figure>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial" data-aos="zoom-in" data-aos-delay="700">
+          <div class="testimonial-text">
+            <div class="heading-primary bg">“</div>
+            <div class="heading-tertiary md">
+              One of the best daily podcasts that covers every topic on Spotify.
+            </div>
+            <div class="testimonial-info">
+              <div class="profile-info">
+                <figure class="profile-img">
+                  <img
+                    src="/asset/image/testimonial-img--01.png"
+                    alt="testimonial-img" />
+                </figure>
+                <div class="profile-name">
+                  <p class="paragraph">John Smith,</p>
+                </div>
+              </div>
+              <div class="job-info">
+                <figure class="job-logo">
+                  <img
+                    src="/asset/icon/spotify-small.svg"
+                    alt="spotify-logo--small" />
+                </figure>
+                <div class="job-title">
+                  <p class="pararaph rm">Social Community Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figure class="testimonial-swirl">
+            <img src="/asset/icon/swirl-small.svg" alt="swirl-small" />
+          </figure>
+          <figure class="testimonial-blackstar">
+            <img src="/asset/icon/black-star.svg" alt="black-star" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="sponsor">
+      <div class="sponsor_wrapper center-children--bg">
+        <div class="scribble-icon">
+          <img src="asset/icon/scribble-black.svg" alt="scribble-icon" />
+        </div>
+
+        <div class="sponsor_content">
+          <figure class="sponsor-icon">
+            <img
+              src="/asset/icon/sponsor-sparkle.svg"
+              alt="sponsor-sparkle--icon" />
+          </figure>
+
+          <div class="textbox">
+            <h2 class="heading-secondary md">Become our sponsor</h2>
+            <p class="paragraph">Get exclusive episodes, merch and more</p>
+          </div>
+        </div>
+
+        <div class="sponsor_subcription">
+          <div class="sponsor_subcription--wrapper">
+            <div
+              class="subcription-plan"
+              data-aos="flip-left"
+              data-aos-duration="1200">
+              <div class="plan light-shadow">
+                <div class="plan-textbox">
+                  <h3 class="heading-tertiary md">Member</h3>
+
+                  <p class="paragraph rm">
+                    Lorem ipsum dolor sit amet consectet cing elit, sed do
+                    eiusmod tempor.
+                  </p>
+                </div>
+
+                <div class="plan-info">
+                  <div class="plan-btn">
+                    <a href="#" class="cta black-bg">SUBSCRIBE</a>
+                  </div>
+
+                  <div class="plan-price">
+                    <span class="plan-amount accent-color"> $9.99</span>
+                    <span class="plan-date"> /month </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="discount light-shadow">
+                <p class="paragraph rm">What’s included:</p>
+                <div class="discount-list">
+                  <p class="paragraph md">• Exclusive Content</p>
+                  <p class="paragraph md">• 5% Discount on Merch</p>
+                  <p class="paragraph md">• Join the Community</p>
+                  <p class="paragraph md">• Livestreaming Access</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="subcription-plan"
+              data-aos="flip-left"
+              data-aos-duration="1200">
+              <div class="plan accent-bg light-shadow">
+                <div class="plan-textbox">
+                  <div class="text-wrap">
+                    <h3 class="heading-tertiary md">Family</h3>
+
+                    <a href="#" class="cta"> MOST POPULAR</a>
+                  </div>
+
+                  <p class="paragraph rm">
+                    Lorem ipsum dolor sit amet consectet cing elit, sed do
+                    eiusmod tempor.
+                  </p>
+                </div>
+
+                <div class="plan-info">
+                  <div class="plan-btn">
+                    <a href="#" class="cta black-bg">SUBSCRIBE</a>
+                  </div>
+
+                  <div class="plan-price">
+                    <span class="plan-amount accent-color">$14.99</span>
+                    <span class="plan-date"> /month </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="discount accent-bg light-shadow">
+                <p class="paragraph rm">What’s included:</p>
+                <div class="discount-list">
+                  <p class="paragraph md bold">• Everything in Tier 1</p>
+                  <p class="paragraph md">• Free tickets to Events</p>
+                  <p class="paragraph md">• Limited Edition Merch</p>
+                  <p class="paragraph md">• Promote your Product</p>
+                  <p class="paragraph md">• Request Topic</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="subcription-plan"
+              data-aos="flip-right"
+              data-aos-duration="1200">
+              <div class="plan light-shadow">
+                <div class="plan-textbox">
+                  <h3 class="heading-tertiary md">Official</h3>
+
+                  <p class="paragraph rm">
+                    Lorem ipsum dolor sit amet consectet cing elit, sed do
+                    eiusmod tempor.
+                  </p>
+                </div>
+
+                <div class="plan-info">
+                  <div class="plan-btn">
+                    <a href="#" class="cta black-bg">SUBSCRIBE</a>
+                  </div>
+
+                  <div class="plan-price">
+                    <span class="plan-amount accent-color"> $29.99</span>
+                    <span class="plan-date"> /month </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="discount light-shadow">
+                <p class="paragraph rm">What’s included:</p>
+                <div class="discount-list">
+                  <p class="paragraph md bold">• Everything in Tier 2</p>
+                  <p class="paragraph md">• Exclusive Badge on Livestreaming</p>
+                  <p class="paragraph md">• Become an Official Sponsor</p>
+                  <p class="paragraph md">• Early Access to All Episodes</p>
+                  <p class="paragraph md">• Free Stikers and Merch</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figure class="sponsor_subcription--swirl">
+            <img src="/asset/icon/swirl-blue.svg" alt="swirl-small" />
+          </figure>
+          <figure class="sponsor_subcription--blackstar">
+            <img src="/asset/icon/black-star.svg" alt="black-star" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="article">
+      <div class="article_wrapper center-children--bg">
+        <div class="scribble-icon">
+          <img src="asset/icon/scribble-black.svg" alt="scribble-icon" />
+        </div>
+
+        <div class="article_heading">
+          <!-- <figure class="sponsor-icon">
+            <img
+              src="/asset/icon/sponsor-sparkle.svg"
+              alt="sponsor-sparkle--icon" />
+          </figure> -->
+
+          <div class="textbox">
+            <h2 class="heading-secondary md">Article and News</h2>
+            <p class="paragraph">News, tips, tricks and more</p>
+          </div>
+        </div>
+
+        <div class="article_container">
+          <figure class="article-blackstar--icon">
+            <img src="asset/icon/article-blackstar.svg" alt="blackstar-icon" />
+          </figure>
+          <div class="article_container--wrapper">
+            <div class="article_card dark-bg">
+              <figure class="article_img">
+                <img
+                  src="/asset/image/article-img--1.png"
+                  alt="article-img--1" />
+              </figure>
+
+              <div class="article_textbox">
+                <p class="paragraph rm bold">PODCAST</p>
+                <h3 class="heading-tertiary md accent-color">
+                  Setup your own podcast
+                </h3>
+                <p class="paragraph rm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minimvel iam, quis nostrud exercitation ullamco
+                  laboris...
+                </p>
+              </div>
+
+              <div class="article_info">
+                <div class="article-btn">
+                  <a href="#" class="cta btn--transparent">business</a>
+                  <a href="#" class="cta btn--transparent">startup</a>
+                </div>
+
+                <div class="article-date">
+                  <p class="paragraph">Sep 12, 2021</p>
+                </div>
+              </div>
+            </div>
+            <div class="article_card">
+              <figure class="article_img">
+                <img
+                  src="/asset/image/article-img--2.png"
+                  alt="article-img--2" />
+              </figure>
+
+              <div class="article_textbox">
+                <p class="paragraph rm bold">TIPS & TRICK</p>
+                <h3 class="heading-tertiary md">Doodle artwork 101</h3>
+                <p class="paragraph rm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minimvel iam, quis nostrud exercitation ullamco
+                  laboris...
+                </p>
+              </div>
+
+              <div class="article_info">
+                <div class="article-btn">
+                  <a href="#" class="cta btn--transparent">art</a>
+                  <a href="#" class="cta btn--transparent">creative</a>
+                  <a href="#" class="cta btn--transparent">tips and trick</a>
+                </div>
+
+                <div class="article-date">
+                  <p class="paragraph">Sep 14, 2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figure class="sharp-edge--icon">
+            <img
+              src="asset/icon/article-sharp--edge.svg"
+              alt="sharp-edge--icon" />
+          </figure>
+        </div>
+
+        <div class="article_btn">
+          <a href="#" class="cta black-bg">BROWSE ALL</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer_wrapper center-children--bg">
+        <div class="footer_content">
+          <div class="footer_content-wrapper">
+            <div class="footer-head">
+              <div class="textbox">
+                <img src="asset/logo/podcast-logo.svg" alt="podcast-logo" />
+
+                <span class="text">©2021.</span>
+              </div>
+
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+
+              <div class="logo-box">
+                <img src="asset/logo/twitter.svg" alt="twitter-icon" />
+                <img src="asset/logo/instagram.svg" alt="youtube-icon" />
+                <img src="asset/logo/tiktok.svg" alt="tiktok-icon" />
+              </div>
+            </div>
+
+            <ul class="footer-list">
+              <li class="list">About</li>
+              <li class="list">Testimonials</li>
+              <li class="list">Features</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer_content">
+          <div class="footer_content-wrapper">
+            <ul class="footer-list">
+              <li class="list">Episodes</li>
+              <li class="list">Pricing</li>
+              <li class="list">Blog</li>
+            </ul>
+
+            <div class="footer-info">
+              <p class="paragraph sm davvy-grey">
+                Listen to episodes on your fav platform:
+              </p>
+              <div class="info-logos">
+                <img
+                  src="asset/logo/googlepodcast-logo.svg"
+                  alt="googlepodcast-logo" />
+                <img src="asset/logo/sportify-logo.svg" alt="spotify-logo" />
+                <img src="asset/logo/youtube-logo.svg" alt="youtube-logo" />
+              </div>
+
+              <div class="info-apps">
+                <p class="paragraph sm davvy-grey">App available on:</p>
+                <div class="apps">
+                  <img src="" alt="" />
+                  <img src="asset/logo/app_store.svg" alt="app-store-icon" />
+                  <img
+                    src="asset/logo/google_play.svg"
+                    alt="google-playstore-icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="foot center-children--bg">
+        <div class="foot_wrapper">
+          <div class="foot-text">
+            <p class="paragraph rm">
+              ©2022. All Rights Reserved.
+              <span class="accent-color">Pod of Cast</span>
+            </p>
+          </div>
+
+          <ul class="foot-list">
+            <li class="list">Terms</li>
+            <li class="list">•</li>
+            <li class="list">Privacy</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/script.js" defer></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, // animation only once
+        offset: 120, // offset (in px) from the original trigger point
+        duration: 1000, // values from 0 to 3000, default is 400
+      });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
