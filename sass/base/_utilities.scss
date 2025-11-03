@@ -115,3 +115,24 @@
   transform: translateY(2px);
   box-shadow: $black-shadow--clicked;
 }
+
+.transparent-bg {
+  box-shadow: $btn-shadow;
+  border-radius: $border-radius-rm;
+  border: 2px solid $default-color;
+}
+
+.transparent-bg {
+  box-shadow: $btn-shadow;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.transparent-bg:hover {
+  transform: translateY(-2px);
+  box-shadow: $btn-shadow--hover;
+}
+
+.transparent-bg:active {
+  transform: translateY(2px);
+  box-shadow: $btn-shadow--clicked;
+}

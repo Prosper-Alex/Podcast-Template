@@ -1,0 +1,60 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.header {
+  &_wrapper {
+    position: relative;
+
+    .swirl-icon {
+      position: absolute;
+      right: 5rem;
+      bottom: -5rem;
+      z-index: 1;
+      margin-top: -4rem;
+      height: 10rem;
+      width: 10rem;
+      transform: translateX(-50%);
+
+      img {
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+      }
+    }
+
+    &_content-boxes {
+      position: absolute;
+      transform: translateX(-50%);
+
+      .content-box--wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        background-color: red;
+      }
+      .content-box {
+        height: 24rem;
+        width: 30rem;
+      }
+    }
+  }
+
+  &_content {
+    .content-textbox {
+      .content--btn {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        .transparent-bg {
+          font-size: 1.4rem;
+          font-weight: 700;
+          padding: 2rem 3.4rem;
+        }
+
+        .black-bg {
+          padding: 2rem 3.4rem;
+        }
+      }
+    }
+  }
+}
