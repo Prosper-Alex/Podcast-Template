@@ -2,6 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .header {
+  position: relative;
   &_wrapper {
     position: relative;
 
@@ -18,23 +19,30 @@
       img {
         width: 100%;
         height: 100%;
-        background-color: blue;
       }
     }
 
-    &_content-boxes {
+    .header_content-boxes {
       position: absolute;
+      bottom: -10rem;
+      left: 50%;
       transform: translateX(-50%);
+      width: 100%;
+      max-width: 1200px;
 
       .content-box--wrapper {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
-        background-color: red;
+        gap: 5rem;
+        margin: 0 auto;
       }
+
       .content-box {
+        flex: 1;
         height: 24rem;
-        width: 30rem;
+        width: 100%;
       }
     }
   }
